@@ -4,4 +4,4 @@
 FROM zabbix/zabbix-proxy-mysql:latest
 MAINTAINER Stanislav Osipov <stanislav.osipov@jetbrains.com>
 RUN apk update && \
-    apk add openssl bc jq curl
+    apk add openssl bc jq curl git
