@@ -8,4 +8,5 @@ FROM zabbix/zabbix-proxy-mysql:latest
 MAINTAINER Stanislav Osipov <stanislav.osipov@jetbrains.com>
 USER root
 RUN apk update && apk upgrade &&\
-    apk add openssl openssh bc jq curl git grep net-snmp-tools
+    apk add openssl openssh bc jq curl git grep net-snmp-tools git perl perl-json py-pip grep docker && \
+    rm -rf /var/cache/apk/*
